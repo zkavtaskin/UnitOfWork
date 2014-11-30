@@ -75,7 +75,6 @@
     </Compile>
     <Compile Include="EF\EFRepositoryOfEntity.cs" />
     <Compile Include="EF\EFUnitOfWork.cs" />
-    <Compile Include="NH\NHRepositoryAutoTransaction.cs" />
     <Compile Include="NH\NHConfigurationSingleton.cs" />
     <Compile Include="IDomainEntity.cs" />
     <Compile Include="RepositoryOfTEntity.cs" />

@@ -12,7 +12,7 @@ namespace Application
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("##NHibernate###");
+            System.Console.WriteLine("###NHibernate###");
             NHUnitOfWork uowNH = new NHUnitOfWork();
             CustomerService customerServiceNH = new CustomerService(uowNH, new NHRepository<Customer>(uowNH));
             
@@ -30,7 +30,7 @@ namespace Application
             }
 
 
-            System.Console.WriteLine("##Entity Framework###");
+            System.Console.WriteLine("###Entity Framework###");
             EFUnitOfWork uowEF = new EFUnitOfWork();
             CustomerService customerServiceEF = new CustomerService(uowEF, new EFRepository<Customer>(uowEF));
 

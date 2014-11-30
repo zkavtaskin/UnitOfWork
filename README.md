@@ -1,9 +1,7 @@
 UnitOfWork
 ==========
 
-Unit Of Work For NHibernate and Entity Framework C# Example
-
-As per article:
+Unit Of Work For NHibernate and Entity Framework C# Example, as per article:
 http://www.zankavtaskin.com/2013/12/unit-of-work-for-nhibernate-and-entity.html
 
 If you would like to test it out, just create eCommerce database and run "Customer table.sql".

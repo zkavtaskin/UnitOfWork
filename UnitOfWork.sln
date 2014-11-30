@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		UnitOfWork.vsmdi = UnitOfWork.vsmdi
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "App\Application.csproj", "{172804D5-7A40-434A-9763-FCFC1DEB9245}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{172804D5-7A40-434A-9763-FCFC1DEB9245}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

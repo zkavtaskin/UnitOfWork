@@ -1,0 +1,101 @@
+﻿2013-12-16 23:59:41.86 Server      ODS Event: Exit spid 52
+2013-12-16 23:59:41.86 spid52      ODS Event: Logout connection 52
+2013-12-16 23:59:41.86 Server      ODS Event: Close conn 0 on spid 52
+2013-12-16 23:59:41.90 spid51      ODS Event: language_exec : Xact 0 ORS#: 1, connId: 0
+2013-12-16 23:59:41.90 spid51         Text:select * from Customer
+
+2013-12-16 23:59:52.99 spid52      ODS Event: Login connection 52
+2013-12-16 23:59:53.48 spid52      ODS Event: Logout connection 52
+2013-12-16 23:59:53.48 spid52      ODS Event: Login connection 52
+2013-12-16 23:59:53.48 spid52      ODS Event: Remote_ods : Xact 0 ORS#: 1, connId: 0
+2013-12-16 23:59:53.48 spid52      Xact BEGIN for Desc: 3400000001
+2013-12-16 23:59:54.61 spid52      ODS Event: language_exec : Xact 3400000001 ORS#: 1, connId: 0
+2013-12-16 23:59:54.61 spid52         Text:select customer0_.Id as Id0_, customer0_.FirstName as FirstName0_, customer0_.LastName as LastName0_ from ECommerce.dbo.Customer customer0_
+2013-12-16 23:59:54.74 spid52      Parameter# 0: Name=,Flags=0,Xvt=231,MaxLen=166,Len=166,Pxvar Value=INSERT INTO ECommerce.dbo.Customer (FirstName, LastName, Id) VALUES (@p0, @p1, @p2)
+2013-12-16 23:59:54.74 spid52      Parameter# 1: Name=,Flags=0,Xvt=231,MaxLen=116,Len=116,Pxvar Value=@p0 nvarchar(4000),@p1 nvarchar(4000),@p2 uniqueidentifier
+2013-12-16 23:59:54.74 spid52      Parameter# 2: Name=@p0,Flags=0,Xvt=231,MaxLen=8000,Len=10,Pxvar Value=ZanNH
+2013-12-16 23:59:54.74 spid52      Parameter# 3: Name=@p1,Flags=0,Xvt=231,MaxLen=8000,Len=14,Pxvar Value=21878b0
+2013-12-16 23:59:54.74 spid52      Parameter# 4: Name=@p2,Flags=0,Xvt=36,MaxLen=16,Len=16,Pxvar Value=2320D064-61DC-41E4-9C9F-8090DC1AE33E
+2013-12-16 23:59:54.74 spid52          IPC Name: sp_executesql
+2013-12-16 23:59:54.74 spid52      ODS Event: execrpc : Xact 3400000001 ORS#: 1, connId: 0
+2013-12-16 23:59:54.75 spid52      ODS Event: Remote_ods : Xact 3400000001 ORS#: 1, connId: 0
+2013-12-16 23:59:54.75 spid52      Xact COMMIT for Desc: 3400000001
+2013-12-16 23:59:55.15 spid53      ODS Event: Login connection 53
+2013-12-16 23:59:55.15 Server      Connection 0x00000001F09D53F0 connId:1, spid:53     New MARS Session 
+2013-12-16 23:59:56.27 spid53      ODS Event: Remote_ods : Xact 0 ORS#: 1, connId: 1
+2013-12-16 23:59:56.27 spid53      Xact BEGIN for Desc: 3500000001
+2013-12-16 23:59:58.19 Server      Connection 0x00000001F09D97A0 connId:2, spid:53     New MARS Session 
+2013-12-16 23:59:58.19 spid53      ODS Event: language_exec : Xact 3500000001 ORS#: 1, connId: 2
+2013-12-16 23:59:58.19 spid53         Text:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[FirstName] AS [FirstName], 
+    [Extent1].[LastName] AS [LastName]
+    FROM [dbo].[Customer] AS [Extent1]
+2013-12-16 23:59:58.70 spid53      Parameter# 0: Name=,Flags=0,Xvt=231,MaxLen=154,Len=154,Pxvar Value=INSERT [dbo].[Customer]([Id], [FirstName], [LastName])
+VALUES (@0, @1, @2)
+
+2013-12-16 23:59:58.70 spid53      Parameter# 1: Name=,Flags=0,Xvt=231,MaxLen=102,Len=102,Pxvar Value=@0 uniqueidentifier,@1 varchar(256),@2 varchar(256)
+2013-12-16 23:59:58.70 spid53      Parameter# 2: Name=@0,Flags=0,Xvt=36,MaxLen=16,Len=16,Pxvar Value=456F7C4E-14EB-41EC-82D1-85D8FDEDBB1B
+2013-12-16 23:59:58.70 spid53      Parameter# 3: Name=@1,Flags=0,Xvt=167,MaxLen=256,Len=5,Pxvar Value=ZanEF
+2013-12-16 23:59:58.70 spid53      Parameter# 4: Name=@2,Flags=0,Xvt=167,MaxLen=256,Len=7,Pxvar Value=5a25e68
+2013-12-16 23:59:58.70 spid53          IPC Name: sp_executesql
+2013-12-16 23:59:58.70 spid53      ODS Event: execrpc : Xact 3500000001 ORS#: 1, connId: 2
+2013-12-16 23:59:58.72 spid53      ODS Event: Remote_ods : Xact 3500000001 ORS#: 1, connId: 1
+2013-12-16 23:59:58.72 spid53      Xact COMMIT for Desc: 3500000001
+2013-12-16 23:59:58.75 Server      ODS Event: Close conn 2 on spid 53
+2013-12-16 23:59:58.75 Server      ODS Event: Close conn 1 on spid 53
+2013-12-16 23:59:58.75 Server      ODS Event: Exit spid 52
+2013-12-16 23:59:58.75 spid52      ODS Event: Logout connection 52
+2013-12-16 23:59:58.75 Server      ODS Event: Close conn 0 on spid 52
+2013-12-17 00:00:00.25 Server      ODS Event: Exit spid 53
+2013-12-17 00:00:00.25 spid53      ODS Event: Logout connection 53
+2013-12-17 00:00:00.25 Server      ODS Event: Close conn 0 on spid 53
+2013-12-17 00:00:05.15 spid51      ODS Event: language_exec : Xact 0 ORS#: 1, connId: 0
+2013-12-17 00:00:05.15 spid51         Text:select * from Customer
+
+2013-12-17 00:01:35.41 spid52      ODS Event: Login connection 52
+2013-12-17 00:01:35.91 spid52      ODS Event: Logout connection 52
+2013-12-17 00:01:35.91 spid52      ODS Event: Login connection 52
+2013-12-17 00:01:35.91 spid52      ODS Event: Remote_ods : Xact 0 ORS#: 1, connId: 0
+2013-12-17 00:01:35.91 spid52      Xact BEGIN for Desc: 3400000001
+2013-12-17 00:01:37.04 spid52      ODS Event: language_exec : Xact 3400000001 ORS#: 1, connId: 0
+2013-12-17 00:01:37.04 spid52         Text:select customer0_.Id as Id0_, customer0_.FirstName as FirstName0_, customer0_.LastName as LastName0_ from ECommerce.dbo.Customer customer0_
+2013-12-17 00:01:37.20 spid52      Parameter# 0: Name=,Flags=0,Xvt=231,MaxLen=166,Len=166,Pxvar Value=INSERT INTO ECommerce.dbo.Customer (FirstName, LastName, Id) VALUES (@p0, @p1, @p2)
+2013-12-17 00:01:37.20 spid52      Parameter# 1: Name=,Flags=0,Xvt=231,MaxLen=116,Len=116,Pxvar Value=@p0 nvarchar(4000),@p1 nvarchar(4000),@p2 uniqueidentifier
+2013-12-17 00:01:37.20 spid52      Parameter# 2: Name=@p0,Flags=0,Xvt=231,MaxLen=8000,Len=10,Pxvar Value=ZanNH
+2013-12-17 00:01:37.20 spid52      Parameter# 3: Name=@p1,Flags=0,Xvt=231,MaxLen=8000,Len=14,Pxvar Value=2d4e191
+2013-12-17 00:01:37.20 spid52      Parameter# 4: Name=@p2,Flags=0,Xvt=36,MaxLen=16,Len=16,Pxvar Value=B97CD951-8A2A-4E50-8D24-4AAE59A3F3F4
+2013-12-17 00:01:37.20 spid52          IPC Name: sp_executesql
+2013-12-17 00:01:37.20 spid52      ODS Event: execrpc : Xact 3400000001 ORS#: 1, connId: 0
+2013-12-17 00:01:37.21 spid52      ODS Event: Remote_ods : Xact 3400000001 ORS#: 1, connId: 0
+2013-12-17 00:01:37.21 spid52      Xact COMMIT for Desc: 3400000001
+2013-12-17 00:03:03.66 spid53      ODS Event: Login connection 53
+2013-12-17 00:03:03.66 Server      Connection 0x00000001F05D93F0 connId:1, spid:53     New MARS Session 
+2013-12-17 00:03:05.12 spid53      ODS Event: Remote_ods : Xact 0 ORS#: 1, connId: 1
+2013-12-17 00:03:05.12 spid53      Xact BEGIN for Desc: 3500000001
+2013-12-17 00:03:07.38 Server      Connection 0x00000001F09D97A0 connId:2, spid:53     New MARS Session 
+2013-12-17 00:03:07.38 spid53      ODS Event: language_exec : Xact 3500000001 ORS#: 1, connId: 2
+2013-12-17 00:03:07.38 spid53         Text:SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[FirstName] AS [FirstName], 
+    [Extent1].[LastName] AS [LastName]
+    FROM [dbo].[Customer] AS [Extent1]
+2013-12-17 00:03:07.97 spid53      Parameter# 0: Name=,Flags=0,Xvt=231,MaxLen=154,Len=154,Pxvar Value=INSERT [dbo].[Customer]([Id], [FirstName], [LastName])
+VALUES (@0, @1, @2)
+
+2013-12-17 00:03:07.97 spid53      Parameter# 1: Name=,Flags=0,Xvt=231,MaxLen=102,Len=102,Pxvar Value=@0 uniqueidentifier,@1 varchar(256),@2 varchar(256)
+2013-12-17 00:03:07.97 spid53      Parameter# 2: Name=@0,Flags=0,Xvt=36,MaxLen=16,Len=16,Pxvar Value=506FB7B2-8E97-474F-B585-A513A3D70EC9
+2013-12-17 00:03:07.97 spid53      Parameter# 3: Name=@1,Flags=0,Xvt=167,MaxLen=256,Len=5,Pxvar Value=ZanEF
+2013-12-17 00:03:07.97 spid53      Parameter# 4: Name=@2,Flags=0,Xvt=167,MaxLen=256,Len=7,Pxvar Value=4362ce1
+2013-12-17 00:03:07.97 spid53          IPC Name: sp_executesql
+2013-12-17 00:03:07.97 spid53      ODS Event: execrpc : Xact 3500000001 ORS#: 1, connId: 2
+2013-12-17 00:03:07.99 spid53      ODS Event: Remote_ods : Xact 3500000001 ORS#: 1, connId: 1
+2013-12-17 00:03:07.99 spid53      Xact COMMIT for Desc: 3500000001
+2013-12-17 00:04:05.65 Server      ODS Event: Close conn 2 on spid 53
+2013-12-17 00:04:05.65 Server      ODS Event: Exit spid 52
+2013-12-17 00:04:05.65 spid52      ODS Event: Logout connection 52
+2013-12-17 00:04:05.65 Server      ODS Event: Close conn 0 on spid 52
+2013-12-17 00:04:05.65 Server      ODS Event: Close conn 1 on spid 53
+2013-12-17 00:04:07.15 Server      ODS Event: Exit spid 53
+2013-12-17 00:04:07.15 spid53      ODS Event: Logout connection 53
+2013-12-17 00:04:07.15 Server      ODS Event: Close conn 0 on spid 53
